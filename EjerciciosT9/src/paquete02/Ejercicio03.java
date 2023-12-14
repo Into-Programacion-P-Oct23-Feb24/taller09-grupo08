@@ -19,12 +19,25 @@ public class Ejercicio03 {
         int[] arreglo = {1, 10, 11, 12, 12, 13, 16, 2, 3, 4, 9, 10, 21};
         int suma = 0;
         double media = 0;
+         double[] mayor = null;
         for (int i = 0; i <= 12; i++) {
             suma = suma + arreglo[i];
         }
         media = suma / 12;
         System.out.print(media);
-
+        for (int i = 0; i <= 12; i++) {
+            if (arreglo[i] < media) {
+                double[] menor = new double[13];
+                menor[i] = arreglo[i];
+            } else {
+                mayor = new double[13];
+                mayor[i] = arreglo[i];
+            }
+        }
+        for (int i = 0; i <= 12; i++) {
+        System.out.println("Numeros mayores a la media:");
+         System.out.println(mayor[i]);
+        }
     }
 
 }
