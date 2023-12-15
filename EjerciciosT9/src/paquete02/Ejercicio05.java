@@ -40,7 +40,8 @@ public class Ejercicio05 {
                 inicial[i]=estudiantes[i].substring(0, 1);
             }
             
-            //Comparación y salida
+            //Comparación y salida/compara todas iniciales con la letra 
+            //ingresada 
             for (int i = 0; i < estudiantes.length; i++) {
                 if (inicialIg.equals(inicial[i])) {
                     bandera = false;
